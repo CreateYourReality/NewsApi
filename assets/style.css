@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+main{
+    background-color: #F5F2E8;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    border-top: none;
+}
+
+h1{
+    font-size: clamp(2rem,10vw,19.5rem);
+    margin-top: 8vh;
+    border-top: 3px solid black;
+}
+
+a{
+    font-size: clamp(.5rem,2vw,4rem);
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+
+h3{
+    display: inline-block;    
+    font-size: clamp(1rem,1.3vw,1.8rem);
+}
+
+a:hover{
+    color: grey;
+}
+
+select{
+    height: 25px;
+    font-size: clamp(1rem,1.3vw,1.5rem);
+    border-radius: 5px;
+
+}
+
+label{
+    font-size: clamp(1rem,1.3vw,1.8rem);
+    font-weight: 900;
+}
+
+h2{
+    font-size: clamp(1rem,1.5vw,2rem);
+}
+
+p{
+    font-size: clamp(1rem,2vw,4rem);
+    color: white;
+}
+
+
+header article {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header article:first-of-type{
+    margin-top: clamp(.05rem,.05vw,1rem);
+    margin-bottom: 20px;
+    background-color: black;
+    padding: 10px 20px;
+    width: 80%;
+}
+
+header article:last-of-type{
+    justify-content: space-between;
+    width: 95%;
+
+}
+
+header{
+    background-color: #F5F2E8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10vw;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border: solid black 1px;
+    border-bottom: none;
+    margin-top: 50px;
+}
+
+input[type="text"]{
+    background-image: url(./img/lupe.png);
+    padding-left: 30px;
+    background-size: 12%;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-left: 5px;
+    border-radius: 5px;
+    width: clamp(1rem,8vw,12rem);
+    height: clamp(1rem,2.5vw,3rem)
+    ;
+}
+
+main div{
+    background-color: dimgray;
+    width: 80%;
+    padding: 10px 5px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+section{
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+section article{
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 30%;
+    max-width: 30%;
+    max-height: 38vh;
+    min-height: 38vh;
+    background-color: #e7e4da;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    border:  #d6d4cd solid 1px;
+    position: relative;
+    background-image: url(./img/nijwam-swargiary-FPNnKfjcbNU-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+}
+
+
+
+section article:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
+section article p{
+    font-size: clamp(1rem,1.1vw,1.3rem);
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 900;
+    margin: 5px 0;
+}
+
+section article a{
+    font-size: clamp(1rem,1.2vw,2rem);
+    color: darkgoldenrod;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 2px  white;
+}
+
+section article a:hover{
+    color:white;
+}
+
+section article img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    opacity: 80%;
+}
+
+h4{
+    align-self: flex-start;
+    padding-top: 10px;
+    font-size: clamp(1rem,2vw,2.5rem);
+    text-shadow: 2px 2px 2px black;
+    color: white;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>NEWS API</title>
+</head>
+<body>
+    <header>
+        <h1>DAILY NEWS</h1>
+        <article>
+            <a onclick="ChangeCategory('general')">GENERAL</a>
+            <p>-</p>
+            <a onclick="ChangeCategory('science')">SCIENCE</a>
+            <p>-</p>
+            <a onclick="ChangeCategory('health')">HEALTH</a>
+            <p>-</p>
+            <a onclick="ChangeCategory('business')">BUSINESS</a>
+            <p>-</p>
+            <a onclick="ChangeCategory('sports')">SPORT</a>
+            <p>-</p>
+            <form onsubmit="ChangeLanguage()">
+                <input type="text" id="searchField">
+            </form>
+        </article>
+        <article>
+            <h2 id="currentDate">AKTUELLES DATUM</h2>
+            <h2>BEST NEWSPAPER IN WEB</h2>
+            <h2>SEIT 2023</h2>
+        </article>
+    </header>
+    <main>
+        <div>
+            <h3></h3>
+            <form >
+                <label for="changeLanguage">Language</label>
+                <select onchange="ChangeLanguage()" name="changeLanguage" id="changeLanguage">
+                    <option value="de">Deutsch</option>
+                    <option value="us">USA</option>
+                    <option value="at">Österreich</option>
+                    <option value="fr">Frankreich</option>
+                    <option value="gb">England</option>
+                </select>
+            </form>
+        </div>
+        
+        <section>
+            <article>
+               <!-- <img src="./assets/img/nijwam-swargiary-FPNnKfjcbNU-unsplash.jpg" alt="article image"> -->
+                <h4>ÜBERSCHRIFT</h4>
+                <p>description Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, labore maxime? Mollitia sequi architecto commodi eaque, ut eum quasi rerum. Maxime ad, neque eligendi labore ratione praesentium repellendus numquam iste?</p>
+                <a href="#">LINK TO ARTICLE</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://www.flaticon.com/de/kostenlose-icons/suche" title="suche Icons">Suche Icons erstellt von Freepik - Flaticon</a>
+    </footer>
+    <script type="text/javascript" src="./assets/main.js"></script>
+</body>
+</html>
